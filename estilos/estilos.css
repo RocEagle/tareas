@@ -104,7 +104,13 @@ body {
 
 .almacen{
     width: 70%;
+    height: 100%;
     padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-flow: dense;
 }
 
 
@@ -128,8 +134,8 @@ body {
     font-size: 20px;
     color: var(--cerar);
     position: absolute;
-    top: 0;
-    right: 0px;
+    top: 2px;
+    right: 2px;
     cursor: pointer;
 }
 
@@ -137,5 +143,6 @@ body {
     background: var(--fondo2);
     width: 10em;
     height: 10em;
+    padding: 5px;
     position: relative;
 }
