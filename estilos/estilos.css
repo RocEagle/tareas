@@ -2,13 +2,16 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 :root{
     --fondo: #091921;
+    --fondo2: #0c222d;
     --bl_edition: rgba(255,255,255,0.05);
     --bd_edition: rgba(0,0,0,0.5);
     --bco_puro: #ffffff;
     --azulmaya: rgb(115, 194, 251);
+    --cerar: #9d2b2b;
 }
 
 body {
@@ -54,5 +57,85 @@ body {
     border-radius: 10px;
     box-shadow: 3px 3px 5px var(--bd_edition), 
                 -3px -3px 10px var(--bl_edition);
-                
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.cliente{
+    width: 30%;
+    padding: 30px;
+
+}
+.titulo{
+    background: var(--fondo2);
+    width: 80%;
+    height: 3em;
+    font-size: 16px;
+    color:var(--azulmaya);
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+}
+.descripcion{
+    background: var(--fondo2);
+    margin: 5px auto;
+    width: 80%;
+    height: 20em;
+    font-size: 16px;
+    color: var(--azulmaya);
+    text-align: center;
+    border: none;
+    text-transform: uppercase;
+    padding: 15px;
+}
+.btn_guardar{
+    background: var(--fondo2);
+    width: 33.33%;
+    height: 30px;
+    color: var(--azulmaya);
+    text-align: center;
+    border: none;
+    border-radius: 15px ;
+    text-transform: uppercase;
+    margin: 5px 22%;
+}
+
+.almacen{
+    width: 70%;
+    padding: 30px;
+}
+
+
+.almacen h3{
+    font-size: 22px;
+    color:var(--azulmaya);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.almacen p {
+    font-size: 18px;
+    color: var(--azulmaya);
+
+}
+
+.btn_borrar{
+    width: 1em;
+    height: 1em;
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--cerar);
+    position: absolute;
+    top: 0;
+    right: 0px;
+    cursor: pointer;
+}
+
+.nota {
+    background: var(--fondo2);
+    width: 10em;
+    height: 10em;
+    position: relative;
 }
