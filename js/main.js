@@ -1,6 +1,5 @@
 document.getElementById('formulario').addEventListener('submit',guardarTarea);
-let hora = new Date();
-console.log(hora);
+
 
 function guardarTarea(e) {
     let titulo = document.getElementById('titulo').value;
@@ -38,8 +37,7 @@ function verTareas() {
         notas.innerHTML += `
         <div class="nota">
             <h3>${titulo}</h3>
-            <p> ${descripcion}</p><br>
-            <p> ${hora} </p>
+            <p> ${descripcion}</p>
             <button onclick="borrar('${titulo}')"  class="btn_borrar" id="btn_borrar"></button>
         </div>
         `
