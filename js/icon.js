@@ -10,7 +10,6 @@ function ico_rocket() {
     </svg>
         `;      
     }
-    console.log(icon);
 };
 
 function ico_home() {

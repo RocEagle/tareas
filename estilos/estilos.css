@@ -66,7 +66,7 @@ body {
 .cliente{
     width: 30%;
     padding: 30px;
-
+    min-width: 300px;
 }
 .titulo{
     background: var(--fondo2);
@@ -107,7 +107,7 @@ body {
     height: 100%;
     padding: 30px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 10px;
     grid-auto-flow: dense;
