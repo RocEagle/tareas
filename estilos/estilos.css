@@ -36,6 +36,10 @@ body {
     justify-content: center;
 }
 
+.foot{
+    grid-area: foo;
+}
+
 .path_rocket {
     fill: var(--azulmaya);
     filter: drop-shadow(-5px -5px 20px rgba(255, 255, 255, 0.7));
@@ -115,28 +119,38 @@ body {
 
 
 .almacen h3{
-    font-size: 22px;
+    font-size: 20px;
     color:var(--azulmaya);
     font-weight: bold;
     text-transform: uppercase;
+
 }
 
 .almacen p {
-    font-size: 18px;
+    font-size: 16px;
     color: var(--azulmaya);
+    text-align: center;
+    margin-top: 5px;
 
 }
 
 .btn_borrar{
+    width: 0.8em;
+    height: 0.8em;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background: var(--cerar);
+}
+
+.btn_borrar:hover{
+    background-color: yellow;
     width: 1em;
     height: 1em;
-    font-weight: 600;
-    font-size: 20px;
-    color: var(--cerar);
-    position: absolute;
-    top: 2px;
-    right: 2px;
-    cursor: pointer;
+    transition: linear  150ms;
 }
 
 .nota {
@@ -145,4 +159,5 @@ body {
     height: 10em;
     padding: 5px;
     position: relative;
+    border-radius: 5px;
 }
